@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- sanitize.css -->
+    <link href="https://unpkg.com/sanitize.css" rel="text/plain" />
+
+    <!--css-->
+    <link rel="stylesheet" href="../Water-Meditation/css/main.css">
+    <link rel="stylesheet" href="../Water-Meditation/css/style.css">
+    <link rel="stylesheet" href="../Water-Meditation/css/responsiveness.css">
+
+    <title>Meditation</title>
+</head>
+
+<body>
+    <audio>
+        <source src="../Water-Meditation/sounds/water Sound.ogg" type="audio/ogg">
+        <source src="../Water-Meditation/sounds/Water Sound.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="container">
+        <div id="circle">
+            <h1 id="time">
+                <span id="minutesT">00</span>
+                <span id="point">:</span>
+                <span id="secondsT">00</span>
+            </h1>
+            <div id="small-circle"> </div>
+        </div>
+
+
+
+        <div id="controls">
+            <div id="minutes-container">
+                <label for="minutes">Minutos:</label>
+                <select name="minutes" id="minutesS"></select>
+            </div>
+
+            <div id="seconds-container">
+                <label for="seconds">Segundos:</label>
+                <select name="seconds" id="secondsS"></select>
+            </div>
+
+            <button id="start">start</button>
+        </div>
+    </div>
+
+    <!-- javaScript -->
+    <script src="../Water-Meditation/js/script.js"></script>
+</body>
+
+</html>

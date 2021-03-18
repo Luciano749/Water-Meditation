@@ -1,0 +1,185 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  background-color: rgb(96, 196, 162);
+}
+
+#container {
+  width: 90rem;
+  height: 70rem;
+  padding: 5rem 0;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+#circle {
+  width: 25rem;
+  height: 25rem;
+  background-color: rgb(26, 150, 150);
+
+  border-radius: 40rem;
+  border: 1rem solid rgba(0, 0, 0, 0.432);
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  overflow: hidden;
+  position: relative;
+}
+
+#small-circle {
+  width: 100%;
+  height: 0%;
+  background-color: rgba(0, 0, 0, 0.336);
+
+  position: absolute;
+  bottom: 0;
+
+  -webkit-transition: height 250ms;
+
+  -o-transition: height 250ms;
+
+  transition: height 250ms;
+}
+
+#circle span {
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 5rem;
+  color: white;
+
+  -webkit-user-select: none;
+
+  -moz-user-select: none;
+
+  -ms-user-select: none;
+
+  user-select: none;
+  z-index: 99;
+}
+
+#controls {
+  width: 100%;
+  height: 30%;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  -webkit-transition: opacity 250ms;
+
+  -o-transition: opacity 250ms;
+
+  transition: opacity 250ms;
+}
+
+#minutes-container,
+#seconds-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+#controls label {
+  font-size: 3rem;
+  text-transform: uppercase;
+
+  font-family: "Roboto";
+}
+
+#controls select {
+  background-color: rgb(108, 216, 180);
+
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+
+  font-family: "Roboto";
+  font-size: 2rem;
+  position: relative;
+}
+
+#button-container {
+  border: 1px solid salmon;
+  height: 100%;
+}
+
+#controls button {
+  font-size: 2.45rem;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-weight: bolder;
+  color: white;
+
+  margin-top: 2rem;
+
+  -ms-flex-item-align: start;
+
+  align-self: flex-start;
+  padding: 1.5rem 2rem;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.219);
+  cursor: pointer;
+  -webkit-transition: background-color 400ms;
+  -o-transition: background-color 400ms;
+  transition: background-color 400ms;
+}
+
+#controls button:hover {
+  background-color: rgba(0, 0, 0, 0.377);
+}
